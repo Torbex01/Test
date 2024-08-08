@@ -1,0 +1,140 @@
+.container{
+    height: 100vh;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   /* background-color: aqua;*/
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    color: rgb(95, 94, 94);
+}
+.navigation{
+    display: flex;
+    margin-left: 27px;
+}
+.navigation nav{
+    /*background-color: red;*/
+    margin: 0 10px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.regbutton{
+    background-color: transparent;
+    border: 1px solid rgb(95, 94, 94);
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.iconMenu{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    /*background-color: blue;*/
+    padding: 30px;
+    width: 90%;
+    margin-left: 40px;
+}
+.hero-left{
+    /*background-color: yellow;*/
+    width: 45%;
+}
+.hero-right{
+    /*background-color: pink;*/
+    width: 45%;
+}
+.hero-right img{
+    width: 100%;
+    object-fit: cover;
+}
+.hero-left h2{
+    font-size: 50px;
+    /*background-color: purple;*/
+    width: 280px;
+}
+
+.text{
+    /*background-color: brown;*/
+    width: 300px;
+    font-size: 15px;
+}
+.learn-button{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+.down-images{
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    margin-top: 80px;
+}
+@media (max-width: 768px){
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .navigation{
+        display: none;
+    }
+   
+    .header-right{
+        display: none;
+    }
+    .iconMenu{
+        display: block;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-left{
+        justify-content: center;
+        /* background-color: blue; */
+        align-items: center;
+        text-align: justify;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .hero-right{
+        /* background-color: aquamarine; */
+        width: 50%;
+    }
+    .learn-button{
+        display: inline-block;
+    }
+    .down-images{
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        margin-top: 40px;
+     }
+     .image{
+        width: 70px;
+     }
+}
